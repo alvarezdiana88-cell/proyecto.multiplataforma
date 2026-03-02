@@ -59,4 +59,5 @@ function handleLogin() {
             }).then(alert => alert.present());
     })
 }
-</script>//actualizado el 2024-06-01
+//cometaria 
+</script>
