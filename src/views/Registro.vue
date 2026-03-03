@@ -68,7 +68,7 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonItem,
     IonInput, IonButton, IonLabel, IonButtons, alertController } from '@ionic/vue';
 import { useUserStore } from '@/stores/user';
 import { useRouter } from 'vue-router';
-import { useVuelidate } from '@vuelidate/core'npm install @vuelidate/core @vuelidate/validators
+import { useVuelidate } from '@vuelidate/core'
 import { required, email, minLength } from '@vuelidate/validators'
 
 const userStore = useUserStore();
