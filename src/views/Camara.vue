@@ -30,6 +30,5 @@ const takePicture = async () => {
   const imageUrl = image.webPath;
   imageInfo.value = image;
   imageSrc.value = imageUrl;
-};//nuevo b
-
+};//nuevo comentatio
 </script>
