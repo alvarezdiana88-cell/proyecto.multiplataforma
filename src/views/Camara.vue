@@ -1,26 +1,28 @@
 <template>
-    <ion-page>
-        <ion-header>
-            <ion-toolbar>
-                <ion-title>Camera</ion-title>
-            </ion-toolbar>
-        </ion-header>
-        <ion-content class="ion-padding">
-            <ion-button @click="takePicture">Take Picture</ion-button>
-            <div v-if="imageSrc">
-                <img :src="imageSrc" alt="Taken picture" />
-            </div>
-            <pre>{{ imageInfo }}</pre>
-        </ion-content>
-    </ion-page>
+<ion-page>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Camera</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-button expand="block" @click="takePicture">Take Picture</ion-button>
+    <div v-if="imageSrc">
+      <img :src="imageSrc" alt="Captured Image" style="width: 100%; margin-top: 20px;" />
+    </div>
+    <pre >{{ imageInfo }}</pre>
+  </ion-content>
+</ion-page>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/vue';
-import { Camera, CameraResultType } from '@capacitor/camera';
+import { Camera ,CameraResultType } from '@capacitor/camera';
 const imageSrc = ref<string | undefined>('');
 const imageInfo = ref<string | undefined>('');
+
 const takePicture = async () => {
   const image = await Camera.getPhoto({
     quality: 90,
@@ -28,7 +30,8 @@ const takePicture = async () => {
     resultType: CameraResultType.Uri
   });
   const imageUrl = image.webPath;
-  imageInfo.value = image;
+  imageInfo.value =image;
   imageSrc.value = imageUrl;
-};//nuevo comentatio
+};
+
 </script>
