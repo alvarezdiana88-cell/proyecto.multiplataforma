@@ -33,5 +33,5 @@ const takePicture = async () => {
   imageInfo.value =image;
   imageSrc.value = imageUrl;
 };
-
+//camara instalada 
 </script>
