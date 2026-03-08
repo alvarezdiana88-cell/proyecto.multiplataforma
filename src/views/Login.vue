@@ -59,5 +59,4 @@ function handleLogin() {
             }).then(alert => alert.present());
     })
 }
-//cometaria 
 </script>

@@ -43,4 +43,4 @@ export const useUserStore = defineStore('user', () => {
         })
     }
     return { registro, login, $login, token, $setLogin, userData, $registro };
-});//mi oprueba
+});
