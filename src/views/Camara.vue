@@ -93,6 +93,7 @@ const takePicture = async () => {
 }
 
 h1 {
-  color: #4a148c;
+  color: #4a148c; /*NUE COLOR PÚRPURA MÁS OSCURO*/
+
 }
 </style>
