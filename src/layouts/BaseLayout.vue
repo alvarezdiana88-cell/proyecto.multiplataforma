@@ -80,22 +80,27 @@
             <div v-if="currentSection === 'intro1'">
                 <h1>Bienvenida</h1>
                 <p>Esta es la página de bienvenida con un fondo azul claro.</p>
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Diana" alt="Imagen de bienvenida" style="width: 150px; margin-top: 20px;">
             </div>
             <div v-else-if="currentSection === 'intro2'">
                 <h1>Instrucciones</h1>
                 <p>Aquí encontrarás las instrucciones con un fondo verde claro.</p>
+                    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Imagen de instrucciones" style="width: 150px; margin-top: 20px;">
             </div>
             <div v-else-if="currentSection === 'about'">
                 <h1>Nosotros</h1>
                 <p>Información sobre nosotros con un fondo amarillo claro.</p>
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Diana" alt="Imagen de nosotros" style="width: 150px; margin-top: 20px;">
             </div>
             <div v-else-if="currentSection === 'contact'">
                 <h1>Contacto</h1>
                 <p>Página de contacto con un fondo naranja claro.</p>
+                <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="Imagen de contacto" style="width: 150px; margin-top: 20px;">
             </div>
             <div v-else>
                 <h1>Selecciona una opción</h1>
                 <p>Usa el menú para navegar por las diferentes secciones.</p>
+                <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif " alt="Imagen de inicio" style="width: 150px; margin-top: 20px;">
             </div>
         </ion-content>
     </ion-page>
