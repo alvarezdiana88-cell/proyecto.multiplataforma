@@ -8,7 +8,7 @@
       <ion-title>Cámara</ion-title>
     </ion-toolbar>
   </ion-header>
-// El contenido de la página con un fondo púrpura suave
+
   <ion-content class="ion-padding camera-bg">
     <div class="camera-container">
       <h1>Captura una Foto</h1>
