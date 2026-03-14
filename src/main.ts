@@ -30,13 +30,18 @@ import '@ionic/vue/css/display.css';
  * https://ionicframework.com/docs/theming/dark-mode
  */
 
-/* @import '@ionic/vue/css/palettes/dark.always.css'; */
+/* import '@ionic/vue/css/palettes/dark.always.css';*/
 /* @import '@ionic/vue/css/palettes/dark.class.css'; */
-import '@ionic/vue/css/palettes/dark.system.css';
+import '@ionic/vue/css/palettes/dark.system.css'; 
+
+import "@fortawesome/fontawesome-free/css/fontawesome.css";
+import "@fortawesome/fontawesome-free/css/regular.css";
+import "@fortawesome/fontawesome-free/css/solid.css";
+import "@fortawesome/fontawesome-free/css/brands.css";
 
 /* Theme variables */
 import './theme/variables.css';
-const pinia = createPinia();
+const pinia = createPinia()
 const app = createApp(App)
   .use(IonicVue)
   .use(pinia)
