@@ -10,7 +10,7 @@
                 <ion-list>
                     <ion-item>
                         <ion-avatar aria-hidden="true" slot="start">
-                            <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+<img alt="Avatar" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Diana" />
                         </ion-avatar>
                         <ion-label>{{ userStore.userData.usuario }}</ion-label>
                         <ion-button slot="end" fill="solid" size="small" @click="handleLogout">Salir</ion-button>

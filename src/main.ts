@@ -41,6 +41,8 @@ import "@fortawesome/fontawesome-free/css/brands.css";
 
 /* Theme variables */
 import './theme/variables.css';
+/* Custom theme overrides */
+import './theme/custom.css';
 const pinia = createPinia()
 const app = createApp(App)
   .use(IonicVue)
