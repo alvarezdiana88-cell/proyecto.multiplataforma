@@ -42,6 +42,7 @@
             </ion-content>
             <ion-footer>
                 <ion-button slot="end" fill="solid" size="small" class="boton-rojo" @click="router.push({ name: 'Camara'})">Cámara</ion-button>
+                <ion-button slot="end" fill="solid" size="small" class="boton-azul" @click="router.push({ name: 'Temperaturas'})">🌡️ Clima</ion-button>
             </ion-footer>
         </ion-menu>
         <ion-header>
@@ -90,4 +91,10 @@
 
     box-shadow: 4px 0px 16px rgba(255, 0, 255, 0.18);
   }
+
+  .boton-azul {
+    --background: var(--ion-color-primary);
+    --color: white;
+  }
 </style>
+

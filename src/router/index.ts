@@ -7,12 +7,14 @@ const Login = () => import('@/views/Login.vue');
 const Registro = () => import('@/views/Registro.vue');  
 const Camara = () => import('@/views/Camara.vue');
 const SeccionContenidos = () => import('@/views/SeccionContenido.vue');
+const Temperaturas = () => import('@/views/Temperaturas.vue');
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     redirect: '/seccion'
   },
+
   {
     path: '/login',
     name: 'Login',
@@ -50,7 +52,13 @@ const routes: Array<RouteRecordRaw> = [
         name: 'SeccionContenidos',
         component: SeccionContenidos,
       },
+      {
+        path: 'temperaturas',
+        name: 'Temperaturas',
+        component: Temperaturas
+      }
     ]
+
   },
 ]
 
